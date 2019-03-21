@@ -1,0 +1,11 @@
+1) getLocalPort() returns an integer value that is the local port number
+   to which the socket is bound.
+
+2) Returns the address to which the socket is connected.
+
+3) Returns the remote port number to which this socket is connected.
+
+4) prints out the InetAddress and local port of the socket.
+
+5) prints the InetAddress of the socket accepted by the ServerSocket and
+prints the port number and local port of the Server.
