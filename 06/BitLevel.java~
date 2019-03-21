@@ -1,0 +1,25 @@
+import java.util.Scanner;
+import java.io.*;
+class BitLevel {
+
+    public static void main(String [] args) throws IOException {
+        FileInputStream in = new FileInputStream(File file1);
+        FileOutputStream out = new  
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter key");
+        String key = sc.nextLine();
+        
+        int i=0, y=0, result=0;
+        
+        while( (i=in.read()) != -1) {
+            for(y=0; y<key.length(); y++) {
+                result = i ^ ((int)(key.charAt(y)));
+                out.write((char)result);
+            }
+                if(y == (key.length()-1)) {
+                    y=0;
+                }
+            
+        }
+    }
+}

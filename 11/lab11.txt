@@ -1,0 +1,27 @@
+1) The send() method prints a line of text to the output stream of the socket.
+
+2) It is going to the output stream of the socket.
+
+3) The toString() method os used so that the id can be printed out when the
+   ClientHandler object is a parameter of a print method.
+
+4) No because he cout variable is incremented and used as the id for the next
+   connection. It does not decrease when a client disconnects.
+
+5) try {
+     new ChatServer().startServer(Integer.parseInt(args[0]));
+
+     public void startServer(int port) throws Exception {
+     ServerSocket serverSocket = new ServerSocket(port);
+     System.err.println("ChatServer started");
+     while (true) {
+     ClientHandler ch = new ClientHandler(serverSocket.accept());
+
+6) There will be 10 hreads.
+
+7) The 3 client handler thrads start by sending a welcome message. The 3
+   client threads start 2 threads. The main thread starts an infinite
+  while loop that listens for new connections and starts new threads.
+
+
+

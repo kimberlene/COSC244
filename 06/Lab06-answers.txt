@@ -1,0 +1,16 @@
+1) ^ operator
+
+2) The class is menat to read streams of raw bytes usch as image data.
+
+3) public FileInputStream fileReader = new FileInputStream(File myFile);
+
+4) read() -- the method returns an int which is the next byte if not -1 if end of file is reached.
+
+5) The class is meant for writing streams of raw bytes suuch as image data.
+
+6) public FileOutputStream fileWriter = new FileOutputStream(File myFile);
+
+7) write(int b)
+
+8) finalize()
+

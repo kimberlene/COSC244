@@ -1,0 +1,45 @@
+Q1: What two ways can you use to create a thread? Explain each in a couple of sentences.
+
+ANS: The first is to declare a class to be a subclass of a Thread. This subclass should override
+     the run method of the class Thread.
+     
+     The second way is to declare a class that implements the Runnable interface. This way
+     our class can implement the run method. An instance of this class can then be allocated,
+     passed an argument when creating the Thread, and started.
+     
+
+Q2: Whichever way you choose to create a thread, what is the name of the method that must
+    be part of your thread’s implementation?
+
+ANS: run();
+
+
+Q3: What method does a program call to start a thread running?
+
+ANS: start();
+
+
+Q4: What lines in Server.java are different?
+
+ANS: Lines 11 to 15 inclusive. From where we make the Serversocket to our catch.
+
+
+Q5: Explain what lines 14 & 15 do.
+
+ANS: Creates Threads for handling input and output to and from InputStream and OutputStream.
+
+
+Q6: Would it matter if we reversed lines 14 & 15? Why or why not?
+
+ANS: I don't think so but it does make sense to listen for input before making means to send output.
+
+
+Q7: Client.java
+
+
+Q8: Why do lines appear jumbled when we run Example2.java?
+
+ANS: Sometimes threads wake while others are still running and so the CPU has to give control to the
+     waking thread before changing back to the one that was already running.
+
+

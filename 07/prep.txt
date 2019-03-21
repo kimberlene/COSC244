@@ -1,0 +1,63 @@
+Q1 What is the InputStreamReader class meant for?
+
+ANS: This class is used for decoding incoming streams of bytes to produce streams of characters.
+
+
+Q2 What does the explanation say to do for best efficiency? Write the suggested statement.
+
+ANS: Wrapping the InputStreamReader within a BufferedReader;
+	BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        
+
+Q3 What method do you use to read a line from an input stream? What does it return?
+
+ANS: readLine() - Returns a String containing the contents of the line or null if end reached
+
+
+Q4 What does the method, println(String x) do? What does it return?
+
+ANS: It doesn't return anything (return type void), it prints a String and then terminates the line
+
+
+Q5 What does the constructor ServerSocket(int port) do?
+
+ANS: This constructs an instance of the ServerSocket class with the parameter port - the port number of the port which the ServerSocket will be bound to (The one it will listen to).
+
+
+Q6 What does the method accept() do? What does it return?
+
+ANS: This method listens for a connection to be made and accepts it unless an exception is caught. It returns 's' - the new socket.
+
+
+Q7 Which constructor do you think is the most appropriate?
+
+ANS: Socket(InetAddress address, int port) - IP address and port number
+
+
+Q8 What does the method getInputStream() return?
+
+ANS: The input stream from the Socket it's called on for reading bytes.
+
+
+Q9 What method would you use to have a socket use an OutputStream?
+
+ANS: getOutputStream()
+
+
+Q10 When you use the default constructor to create an instance of Date, what is it initialized with?
+
+ANS: The time at which it was allocated, measured to the nearest millisecond.
+
+
+Q11 Write the code fragment required to print the current date and time to standard output.
+
+ANS: System.out.println(Date().toString());
+
+
+Q12 In the Usage error message, what is meant by <port> [host]?
+
+ANS: <port> is the port which we are using to communicate, [host] is the machine which we are trying to talk to
+
+
+
+
